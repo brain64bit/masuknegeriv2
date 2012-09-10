@@ -40,7 +40,7 @@ gem "carrierwave-mongoid",  :require => 'carrierwave/mongoid'
 # view related
 gem "jammit"
 gem "simple_form"
-gem "will_paginate"
+gem "kaminari"#"will_paginate"
 gem "haml"
 gem "haml-rails"
 gem "bb-ruby", :git => "git://github.com/xinuc/bb-ruby.git", :ref => "99bedf9110a8a89b30d5098ad8f35cafd1417abc"
