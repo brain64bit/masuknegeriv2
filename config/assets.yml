@@ -1,3 +1,28 @@
 package_assets: on
 embed_assets: datauri
 javascript_compressor: yui
+javascripts:
+  all:
+  - public/javascripts/jquery.markitup.js
+  - public/javascripts/rails.js
+  - public/javascripts/set.js
+  - public/javascripts/unitpngfix.js
+  - public/javascripts/jquery.autocomplete.js
+  - public/javascripts/jquery.tipsy.js
+  - public/javascripts/jquery-ui-1.8.19.custom.min.js
+  - public/javascripts/jquery.tokeninput.js
+  - public/javascripts/application.js
+stylesheets:
+  all:
+  - public/stylesheets/960.css
+  - public/stylesheets/badges.css
+  - public/stylesheets/typography.css
+  - public/stylesheets/reset.css
+  - public/stylesheets/markitup_bbcode.css
+  - public/stylesheets/markitup_style.css
+  - public/stylesheets/tipsy.css
+  - public/stylesheets/jquery.autocomplete.css
+  - public/stylesheets/print.css
+  - public/stylesheets/screen.css
+  - public/stylesheets/ui-lightness/jquery-ui-1.8.19.custom.css
+  - public/stylesheets/token-input-facebook.css

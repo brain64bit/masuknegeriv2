@@ -24,6 +24,7 @@ gem 'jquery-rails'
 
 # utility
 gem "devise"
+gem "omniauth-facebook"
 gem "omniauth"
 gem "cancan"
 # gem "RubyInline"

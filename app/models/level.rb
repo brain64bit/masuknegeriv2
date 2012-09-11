@@ -13,7 +13,9 @@ class Level
 		kelas_9
 		kelas_10
 		kelas_11
-		kelas_12
+		kelas_12_IPC
+		kelas_12_IPA
+		kelas_12_IPS
   }
   validates_presence_of :name
   validates_inclusion_of :name, :in => LEVELS

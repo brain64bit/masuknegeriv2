@@ -1,0 +1,4 @@
+.badge-wrapper .title { font-size: 2em }
+.badge-wrapper .image { width: 100px;  margin-right: 10px; height: 100px; float: left; }
+.badge-wrapper .description { font-size: 1.2em; }
+ul#student-badges {margin: 10px 20px; list-style:disc outside}

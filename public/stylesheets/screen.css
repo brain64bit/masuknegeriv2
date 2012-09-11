@@ -1,0 +1,454 @@
+/* @group =default */
+
+    /* @group -global */
+	html { height: 100%; }
+	body { background: url("../images-old/embed/bg.gif") repeat-x; /*fix ie8 height issues by changing png to gif*/ color: #555; font: 62.5%/1.5 "lucida grande",verdana,arial,sans-serif; height: 100%; text-align: left; }
+	abbr { display: none; }
+	strong { color: #555; font-weight: bold; }
+	.clearfix { clear: both; }
+	.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	#accessibility { display: none; }
+	/* @end */
+	
+	/* @group -headings */
+	h1,h2,h3,h4 { color: #3E3E3E; font-weight: bold; }
+	h1 { color: #222; font-size: 3em; }
+	h2 { font-size: 3.5em; }
+	h3 { color: #555; font-size: 1.6em; }
+	h4 { font-size: 1.4em;}
+	h5 { font-size: 1.2em; }
+	/* @end */
+
+	/* @group -paragraph */
+	p { color: #555; font-size: 12px; line-height: 1.8; }
+	/* @end */
+	
+	/* @group -form elements */
+	textarea { font: 12px/1.5 "lucida grande",verdana,arial,sans-serif; }
+	input[type="radio"] { margin: 0 10px 0 0; }
+	/* @end */
+	
+	/* @group -lists */
+	li { font-size: 1.2em; }
+	/* @end */
+	
+	/* @group -anchors */
+	a { outline: 0; }
+	a img { border: 0; text-decoration: underline; }
+	a:link, a:visited { color: #388FC5; text-decoration: none; }
+	a:hover { text-decoration: underline; }
+    /* @end */
+
+/* @end */
+	
+/* @group =base */
+	
+	/* @group common style*/
+	#wrapper { -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: #fff; min-height: 100%; height: auto !important; height: 100%; margin: 0px auto -20px; padding: 20px 10px 50px; }
+	#announcements { background: #FFFFEF url('../images-old/exclamation_mark.png') no-repeat 10px 5px; border: 1px dotted #DDDDAA; margin-bottom: 10px; overflow: hidden; padding: 2px 10px 2px 30px; }
+	.name { text-transform: capitalize; }
+	/* @end */
+	
+	/* @group flash message */
+	#alert, #notice, #warning { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding: 2px; margin-bottom: 20px; text-align: center; }
+	#notice { background: #c9ffca; border: 1px solid #7cef71;  }
+	#alert {  background: #AA1224; border: 1px solid #670000; }
+	#alert p { color: #fff; }
+	#warning {  background: #FFFFCC; border: 1px solid #E6DB55; }
+	/* @end */
+	
+	/* @group header */
+	#top { height: 80px; overflow: hidden; }
+	#top h1 a { background: url('../images-old/logo.png') no-repeat; cursor: pointer; display: block; height: 66px; margin-top: 10px; text-indent: -9999px; width: 336px; }
+	#top h1 a:hover { border: none; }
+	#top #loginMenu { float: right; margin-top: 10px; width: 403px; }
+	#top #loginMenu li { display: inline; float: left; margin-right: 10px; width: 160px; }
+	#top #loginMenu label { display: block; width: 60px; }
+	#top #loginMenu .login { float: left; margin-top: 5px; width: 50px; }
+	#top #loginMenu .resetPassw { float: left; margin: 3px 10px 0 0; }
+	#top #loginMenu #student_submit { margin-top: 15px; }
+	#top #topMenu { -moz-border-radius: 0 0 10px 10px; -webkit-border-bottom-left-radius: 10px; -webkit-border-bottom-right-radius: 10px; border-radius: 0 0 10px 10px; background-color: #666; border-top: none; float: right; font-size: 1em; padding: 10px; }
+	#top #topMenu li { display: inline; float: left; margin: 0 0 0 10px; }
+	#top #topMenu li.first { margin-left: 0; }
+	#top #topMenu li a { color: #fff; }
+	#top #topMenu li a:hover { color: #fff042; }
+	/* @end */
+
+	/* @group -content */
+	#primary h2 { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background: #666; border-bottom: none; color: #fff; font-size: 1.2em; padding: 5px 10px; position: relative; zoom: 1; /* fix ie6 not displaying background by adding position relative & zoom 1 */ }
+	#primary .inside { padding: 5px 10px 10px; overflow: hidden; }
+	#primary .inside strong { display: block; }
+	#primary .inside h2 { background: url('../images-old/thumb.png') no-repeat; border-bottom: 2px solid #999; color: #3E3E3E; font-size: 1.8em; padding: 0 0 0 30px; }
+	#primary section { margin-bottom: 10px; }
+	#slider { margin-bottom: 10px; overflow: hidden; width: 579px; }
+	#topScore ol, #topSchool ol, #topRecent ol { margin-top: 10px; }
+	#topScore li, #topRecent li { clear: both; margin-bottom: 10px; overflow: hidden; }
+	#topSchool li { border-bottom: 1px dotted #ccc; margin-bottom: 10px; padding-bottom: 5px; }
+	#topScore .image,  #topRecent .image { float: left; height: 60px;  text-align: center; width: 60px; }
+	#topScore .details, #topRecent .details { float: left; margin-left: 20px; width: 176px; }
+	#report {  }
+	#report input { background: url('../images-old/report.png') no-repeat; border: none; color: #388FC5; cursor: pointer; display: inline; height: 16px; margin-left: 825px; overflow: visible; padding: 0 0 0 20px; width: auto; }
+	.schoolList { margin: 20px 0 -10px; }
+	.schoolList li { float: left; margin: 0 20px 20px 0; }
+	.schoolList li .image { float: left; height: 60px;  text-align: center; width: 60px; }
+	.schoolList li .details { float: left; margin-left: 20px; width: 130px; }
+	
+	/* @group --exercise */
+	#exercise h2 { background: none; color: #555; font-size: 2em; padding: 0; text-align: center; text-transform: uppercase; }
+	#question { padding: 10px 0; }
+	#question header { background-color: #666; height: 20px; overflow: hidden; padding: 10px 0; }
+	#question .displayMenu { overflow: hidden; padding: 0 10px; }
+	#question .displayMenu li { color: #fff; display: inline; float: left; font-size: 1.2em; line-height: 1.4; margin-right: 20px; }
+	#question .displayMenu li.points { margin-left: 50px; }
+	#question .displayMenu li.guide { margin-left: 50px; }
+	#question .displayMenu li.guide a { color: #fff; }
+	#question .displayMenu li.finish { float: right; margin: 0; }
+	#question .displayMenu li a.stop { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background-color: #d05d5b; color: #fff; display: block; font-size: 1em; font-weight: bold; overflow: visible; padding: 3px 10px; text-align: center; width: auto; }
+	#question .displayMenu li a:hover { border: none; }
+	#question .displayMenu li strong { color: #fff; }
+	#question #content { border: 1px solid #ccc; padding: 10px 20px; overflow: hidden; }	
+	#question #content p { font-size: 16px; }
+	#answer { overflow: hidden; }
+	#answer li { float: left; }
+	#answer li.title { display: block; float: none; font-size: 2em; font-weight: bold; margin-bottom: 10px; }
+	#answer p.rightAnswer strong { color: #aacf36; }
+	#answer p.wrongAnswer strong { color: red; }
+	#answer ol.multipleChoice { clear: both; }
+    #answer ol.multipleChoice li.box { background: #eee; color: #555; height: 15px; margin-right: 10px; overflow: hidden; padding: 5px; width: 50px; } 
+    #answer ol.multipleChoice label, #answer ol.multipleChoice input { float: left; margin: 0 5px; }
+	#answer ol.multipleChoice input { margin: 2px 10px 0 0; }
+	#answer ol.multipleChoice li.submit { clear: both; display: inline; margin: 20px 0 0 130px; }
+	#answer ol.multipleChoice li.submit input { -moz-border-radius: 4px; background-color: #a4c57b; border: none; color: #fff; cursor: pointer; font-size: 16px; font-weight: bold; margin: 0; overflow: visible; padding: 5px 10px; text-align: center; width: auto; }
+	#answer #theAnswer h3 { background: #f7f7f7; margin-top: px; padding: 5px; text-align: center; width: 150px; }
+	#answer #theAnswer strong { display: block; }
+	#option a {  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background-color: #388FC5; border: none; color: #fff; display: inline-block; float: right; font-size: 1.2em; font-weight: bold; margin-right: 10px; overflow: visible; padding: 5px 10px; text-align: center; width: auto; }
+	/* @end */	
+	
+	#primary nav#additionalMenu { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background-color: #666; overflow: hidden; padding: 5px 10px; }
+	#primary nav#additionalMenu li { border-left: 1px solid #eee; display: inline; margin: 0 10px 0 0; padding-left: 10px; }
+	#primary nav#additionalMenu li.first { border: none; padding: 0; }
+	#primary nav#additionalMenu li a { color: #fff; font-weight: bold; }
+	#primary nav#additionalMenu li a:hover { border: none; }
+	.chooseSubject { padding: 10px; }
+	.chooseSubject ul { overflow: hidden; }
+	.chooseSubject li { border-bottom: 1px dotted #ccc; margin-bottom: 10px; padding-bottom: 10px; }
+	.chooseSubject li span { float: left; padding-top: 5px; }
+	.chooseSubject li a { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background-color: #388FC5; color: #fff; float: right; font-size: 0.9em; font-weight: bold; padding: 5px 10px; }
+	.chooseSubject li a:hover { border: none; }
+	#terms { padding: 5px 10px 10px; }
+	#terms #info { background-color: #FFFFEF; border-top: 1px dotted #DDDDAA; border-bottom: 1px dotted #DDDDAA; color: #555; margin: 10px 0; padding: 10px; }
+	#terms #info h2 { background: none; color: #3E3E3E; display: inline-block; font-size: 1.4em; margin: 0 5px 0 0; padding: 0; }
+	#terms #info p { font-size: 1.1em; }
+	#terms h3 { border-bottom: 3px solid #eee; margin-bottom: 10px; padding-top: 5px; }
+	#terms h4 { font-size: 1.2em; margin: 10px 0 5px; }
+	#terms h5 { margin: 5px 0; }
+	#terms p, #terms ol { margin-bottom: 10px; }
+	#terms ul li { list-style: lower-alpha inside; margin-bottom: 5px; }
+	#terms ol li { list-style: decimal outside; margin: 0 0 5px 25px; }
+	#primary #filterForm { border-bottom: 1px solid #ccc; margin-bottom: 10px; padding-bottom: 10px; }
+	#primary #filterForm li { float: left; margin-right: 40px; }
+	#primary #filterForm li label { float: left; margin-right: 20px; }
+	#primary #filterForm li select { float: right; }
+
+	.profileList { margin-top: 10px; }
+	.profileList li { border-bottom: 1px dotted #CCCCCC; clear: both; margin-bottom: 10px; }
+	.profileList li strong { float: left; margin-right: 20px; width: 95px; }
+	#profileOption { border-top: 1px solid #ccc; margin-top: 10px; overflow: hidden; padding-top: 10px; }
+	#profileOption li { float: left; margin-right: 10px; }
+	#profileOption li a { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background-color: #388FC5; color: #fff; display: block; font-size: 0.9em; font-weight: bold; padding: 5px 10px; }
+	
+	/* @group article */
+	#updates.blog { margin-top: 10px; }
+	#updates ol { margin-top: 10px; }
+	#updates li { border-bottom: 1px dotted #ccc; padding-bottom: 5px; margin-bottom: 10px; }
+	#updates article { overflow: hidden; }
+	#updates article p { margin-top: 10px; }
+	#updates header h3 { font-size: 16px; }
+	#updates header time, #updates header span { color: #999; font-size: 12px; font-style: italic; }
+	#updates header time { background: url('../images-old/cal_icon.gif') no-repeat left; padding-left: 18px; }
+    #updates header span { background: url('../images-old/cat_icon.gif') no-repeat; padding-left: 18px; }
+    #updates header .share-buttons span { background: none; padding-left: 0 }
+    .twitter-share-button { vertical-align:top }
+    #updates textarea { border: 1px solid #ccc; height: 200px; padding: 10px; width: 675px; }
+    #updates .commentList .avatar { float: left; width: 80px; }
+    #updates .commentList .avatar img { background: #fff; border: 1px solid #ccc; padding: 5px; }
+    #updates .commentList h2 { margin: 10px 0; }
+    #updates .commentList ul { margin-top: 20px; }
+    #updates .commentList li { -moz-border-radius: 6px; background-color: #d7f5f3; border: none; float: left; margin-bottom: 20px; padding: 10px; position: relative; width: 680px; }
+    #updates .commentList li .arrow { background: url('../images-old/comment_arrow.gif') no-repeat; bottom: -14px; height: 15px; left: 10px; position: absolute; width: 85px; }
+    #updates .commentList li.admin { background-color: #FCFCB6; }
+    #updates .commentList li.admin .arrow { background: url('../images-old/comment_arrow_admin.gif') no-repeat; }
+    #updates .commentPost { float: right; width: 580px; }
+    #updates .commentPost p { margin-top: 10px; }
+    #updates #new_comment li { border: none; }
+    #updates #new_comment li.required { background: none; border: none; padding: 0; }
+    #updates #new_comment li.action { background: none; padding: 0; }
+    #updates #new_comment label { font-size: 1.4em; }
+    #updates p.back { border-top: 1px solid #ccc; margin-top: 10px; padding-top: 5px; text-align: right; }
+    /* @end */
+    
+    #tabs li { float: left; margin-right: 5px; }
+	#tabs li div { -moz-border-radius: 4px 4px 0 0; background-color: #F4F4EE; padding: 5px 32px 5px 33px; } 
+	#tabs li div a { color: #222; font-size: 1em; font-weight: bold; }
+	#tabs li div a:hover { border: none; }
+	#tabs li.active div { background-color: #666 !important; }
+	#tabs li.active div a { color: #fff; }
+	#topRecord { background: #666; overflow: hidden; padding: 10px; }
+	#topRecord p.display { margin-bottom: 20px; }
+	#topRecord label { color: #fff; }
+	#topRecord #filter { height: 20px; padding: 10px 0; overflow: hidden; }
+	#topRecord #filter li { display: inline; margin-right: 10px; }
+	#topRecord #filter li select, #topRecord #filter li input { font-size: 1em; }
+	#topRecord #list { background: #fff; padding: 10px; }
+	
+	#reviews ul { margin-top: 10px; }
+	#reviews li { border: none; margin-bottom: 10px; }
+	#reviews li.odd { background-color: #f7f7f7; padding: 10px; }
+	#reviews li ul li { border: none; margin: 0; padding: 0; }
+	#reviews p.answer { margin-top: 10px; }
+	#reviews p.answer strong { background: #d5f2bf; padding: 3px 5px; }
+	#reviews p.questionBody { font-size: 16px; }
+	#reviews .explanation { background: #eee; border: 1px dashed #ccc; margin-top: 5px; padding: 5px 10px; }
+	#reviews #discussionsFilter ol { margin-top: 10px; overflow: hidden; }
+	#reviews #discussionsFilter li { float: left; margin-right: 10px; }
+	#reviews #discussionsFilter li label, #primary #reviews #discussionsFilter li select { float: left; margin-right: 20px; }
+
+	.pagination { clear: both; font-size: 1.1em; line-height: 3; margin: 30px 0 10px; overflow: hidden; text-align: center; }
+	.pagination a { border: 1px solid #E1E1E1; color: #B7B7B7; margin-right: 5px; }
+	.pagination a:hover, .pagination span:hover { border-color: #bbb; color: #888; }
+	.pagination a, .pagination span { padding: 3px 5px; text-decoration: none; }
+	.pagination span, .pagination em { color: #999; }
+.pagination span, .pagination em { color: #999; }
+	.pagination em { background-color: #99CC33; border: 1px solid #99CC33; color: #fff; margin-right: 5px; padding: 3px 5px; }
+	/* @end */
+	
+	/* @group -tryout */
+	.tryout p.tryoutStart a { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); background-color: green; color: #fff; display: inline-block; font-size: 14px; font-weight: bold; margin: 10px 0; padding: 8px 10px; text-align: center; text-decoration: none; text-shadow: none; }
+	#wrapper.tryout { margin: 20px auto; padding-top: 0; }
+	#wrapper.tryout h1 { border-bottom: 3px double #ccc; margin-bottom: 20px; text-align: center; }
+	#wrapper.tryout h2 { background-color: #EE801F; border-bottom: none; margin: 10px 0; text-align: center; }
+	#wrapper.tryout .displayMenu { -moz-border-radius: 4px; background: #666; color: #fff; height: 20px; margin-bottom: 20px; overflow: hidden; padding: 10px; }
+	#wrapper.tryout .displayMenu strong { color: #fff; }
+	#wrapper.tryout .displayMenu li { float: left; margin-right: 50px; }
+	#wrapper.tryout .displayMenu li.guide a { color: #fff; }
+	#wrapper.tryout .displayMenu li.finish { float: right; margin: 0; }
+	#wrapper.tryout .displayMenu li input{ display: none; }
+	#wrapper.tryout aside { float: right; }
+	#wrapper.tryout aside h3 { font-size: 0.9em; font-weight: bold; }
+	#wrapper.tryout aside h3.tpa { text-align: center; }
+	#wrapper.tryout aside ol { float: left; margin-bottom: 10px; padding: 0 10px; width: 50px; }
+	#wrapper.tryout aside .current  { font-weight: bold; font-size: 14px; }
+    #wrapper.tryout aside .current a { color: red; }	
+	#wrapper.tryout .nextQuestion { border-top: 1px solid #ccc; padding-top: 10px; margin-top: 10px; }
+	#wrapper.tryout .nextQuestion div { float: right; }
+	#wrapper.tryout .nextQuestion a { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background-color: #388FC5; color: #fff; font-size: 1.2em; font-weight: bold; padding: 5px 10px; text-align: center; }
+	#wrapper.tryout .nextQuestion a:hover { border: none; }
+	#wrapper.tryout .nextQuestion a.next { float: left; }
+	#wrapper.tryout .nextQuestion a.previous { float: left; margin-right: 10px; }
+	#wrapper.tryout a.stop { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background-color: #d05d5b; color: #fff; font-size: 1em; font-weight: bold; overflow: visible; padding: 3px 10px; text-align: center; width: auto; } 
+	#wrapper.tryout a.stop:hover { border: none; }
+	
+	#wrapper.tryout #theAnswer { background: #eee; margin-top: 20px; padding: 10px; text-align: center; }
+	#wrapper.tryout #theAnswer strong { display: block; font-size: 3em; }
+	#primary #tryout p.duration { text-align: center; }
+	#primary #tryout p.question { font-size: 16px; }
+	/* @end */
+
+	/* @group -aside */
+	aside .inside, nav.inside ul { background-color: #f7f7f7; margin: 0 0 20px; overflow: hidden; padding: 10px; }
+	nav.inside ul.comment li { border-bottom: 1px solid #ccc; margin-bottom: 5px; }
+	aside h2, nav h2 { font-size: 2em; }
+	aside h3 { font-size: 1.4em; font-weight: normal; }
+	
+	aside #updates h2 { font-size: 1.8em; }
+	aside #updates h3 { font-size: 1em; font-weight: bold; }
+	aside #updates p { font-size: 0.9em; margin-top: 10px; }
+	aside #updates li { margin-bottom: 10px; }
+	aside #updates time, aside #updates span { color: #999; font-size: 0.9em; font-style: italic; }
+    aside #updates time { background: url('../images-old/cal_icon.gif') no-repeat; padding-left: 18px; }
+    aside #updates span { background: url('../images-old/cat_icon.gif') no-repeat; padding-left: 15px; }
+	aside #extra { text-align: center; }
+	aside #profile h3 { border-bottom: 1px solid #ccc; color: #000; font-size: 1.2em; font-weight: bold; margin: 5px 0; }
+	aside #profile p { border-bottom: 1px dotted #ddd; }
+	aside #profile ol li { font-size: 1.1em; list-style: outside decimal; margin: 0 0 5px 20px; }
+	aside #studentProfile .avatar { text-align: center; }
+	aside #studentProfile .avatar img { background: #fff; border: 1px solid #ccc; padding: 5px; }
+	aside.leftSide h2, aside.rightSide h2, nav.inside h2 { -moz-border-radius: 4px 4px 0 0; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; border-radius: 4px 4px 0 0; background: #EE801F; border-bottom: none; color: #fff; font-size: 1.2em; padding: 5px 10px; position: relative; zoom: 1; }
+	aside.rightSide #countDown { overflow: hidden; padding: 10px; text-align: center; text-shadow: 0 1px 1px #fff; } 
+	aside #countDown span { display: block; margin-bottom: 10px; }
+	aside.rightSide #countDown .digits { display: inline; font-size: 2em; font-weight: bold; margin: 0; }
+	aside.rightSide #start2Practice a {  -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); background-color: #388FC5; color: #fff; display: inline-block; font-size: 14px; font-weight: bold; margin: 10px 0 10px 30px; padding: 8px 10px; text-align: center; text-decoration: none; width: 120px; }
+	aside.rightSide #start2Practice a.startBttn { background-color: #ff393b; }
+	aside.rightSide #start2Practice a.resultBttn { background-color: green; }
+	aside.rightSide #topScore .inside h2 { background: url('../images-old/thumb.png') no-repeat; border-bottom: 1px solid #ddd; font-size: 1.8em; padding-left: 30px; }
+	aside.rightSide #topScore ol { margin: 0; overflow: hidden; }
+	aside.rightSide #topScore li { clear: both; margin-bottom: 10px; overflow: hidden; }
+	aside.rightSide #topScore li .image { height: 60px; float: left; text-align: center; width: 60px; }
+	aside.rightSide #topScore li .details { float: left; margin-left: 10px; width: 116px; }
+	aside.rightSide #topScore li .details p { font-size: 0.9em; }
+	aside.rightSide #tips p { font-size: 1.1em; line-height: 1.5; }
+	aside.rightSide #tips p.explanation { margin-bottom: 10px; padding-bottom: 10px; }
+	aside.rightSide #tips li { font-size: 1.1em; line-height: 1.5; margin-bottom: 10px; } 
+	/* @end */
+	
+	/* @group admin/contributor page */
+	#wrappedCenter { -moz-border-radius: 14px; -webkit-border-radius: 14px; border-radius: 14px; -moz-box-shadow: 0 0 1px #222222; background-color: #F4F4EE;  margin: 0 0 0 280px; padding: 10px 20px 20px; text-shadow: 0 1px 1px #FFFFFF; position: relative; margin-top: 150px; width: 400px; }
+	#wrappedCenter.tryout #additionalMenu ul { background-color: #666; margin: 10px 0; padding: 5px; position: relative; text-align: center; zoom: 1; }
+	#wrappedCenter.tryout #additionalMenu li { display: inline; margin-right: 5px; }
+	#wrappedCenter.tryout #additionalMenu li.first { border: 0; padding: 0; }
+	#wrappedCenter.tryout #additionalMenu li a { color: #fff; text-shadow: none; }
+	#wrappedCenter.tryout.register { text-align: center; }
+	#wrappedCenter p.registered { color: #00a722; font-weight: bold; text-align: center; }
+	.password #student_email { font-size: 2em; height: 30px; width: 400px; }
+	#wrappedCenter h2 { border-bottom: none; line-height: 1.2; text-align: center; }
+	#wrappedCenter .session { color: #999; text-align: center; }
+	#wrappedCenter h3.session { margin-top: 10px; }
+	#wrappedCenter.password { text-align: left; }
+	#wrappedCenter.password span.info { display: block; margin-top: 10px; }
+	#wrappedCenter.password form { margin: 0 0 20px 0; }
+	#wrappedCenter.password li {  margin: 0 ; padding: 6px 0 0; }
+	#wrappedCenter.password li.submit { clear: both; margin: 10px 0 0 0; }
+	#wrappedCenter.password li.loginOrReg { clear: both; margin: 20px 0 0 0; }
+	#wrappedCenter #terms { font-size: 1em; padding: 5px 10px 10px; }
+	#wrappedCenter #terms p { font-size: ; }
+	#wrappedCenter #terms h3 { border-bottom: 3px solid #eee; margin-bottom: 10px; padding-top: 5px; }
+	#wrappedCenter #terms h4 { font-size: 1.2em; margin: 10px 0 5px; }
+	#wrappedCenter #terms h5 { margin: 5px 0; }
+	#wrappedCenter #terms p, #primary #terms ol.lowerAlpha { margin-bottom: 10px; }
+	#wrappedCenter #terms ul li { list-style: lower-alpha inside; margin-bottom: 5px; }
+	#wrappedCenter #terms ol li { font-size: 1.2em; list-style: decimal outside; margin: 0 0 5px 25px; }
+	#wrappedCenter #terms ol li li { font-size: 1em; }
+	#primary nav.adminSubMenu { font-size: 1.2em; margin: 10px 0; }
+	/* @end */
+
+	/* @group -footer */
+	
+	footer { background: #f3f3f3 url('../images-old/footer.gif') repeat-x; font-size: 1.2em; height: 20px; padding: 10px 0; position: relative; text-align: center; }
+	footer p { color: #555; }
+	
+	/* @end */
+	
+	/* @group =form */
+	
+		#registration { background-color: #ebebeb; margin-bottom: 10px; overflow: hidden; padding: 5px 0 5px 15px; }
+		#registration h2 { margin-bottom: 0; }
+		#registration #new_student { margin-top: 10px; }
+		#registration ol { overflow: hidden; }
+		#registration li { clear: both; margin-bottom: 8px; overflow: hidden; }
+		#registration li label { float: left;  width: 100px; }
+		#registration li input,  #registration li .fieldWithErrors { float: left; }
+		#registration li input#submit { float: none; margin-left: 120px; }
+	    #registration p.error { border-bottom: 1px dotted red; clear: both; color: red; display: inline; font-weight: bold; margin-left: 100px; }
+	    
+		/* @group -loginform */
+		#loginMenu #new_student { float: right; }
+		#loginMenu #new_student input.required { width: 150px; }
+		aside #new_student input.required { width: 205px; }
+		aside #new_student input#student_submit {  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background-color: #388FC5; border: none; color: #fff; display: inline-block; font-size: 12px; font-weight: bold; margin: 10px 0 0 98px; padding: 5px 10px; text-align: center; text-decoration: none; width: 80px;  }
+		#changeSubject label { font-size: 0.9em; padding-right: 10px; }
+		
+	    /* @end */
+	    
+	    /* @group -globalform */
+	    #admin_new li, #contributor_new li, #student_new li, .passwordReset li { margin: 0 ; padding: 6px 0 0; }
+		#admin_new label, #contributor_new label, #student_new label, .passwordReset label { display: block; }
+		#student_new input#student_email, #student_new input#student_password, #admin_new input#admin_email, #admin_new input#admin_password, #contributor_new input#contributor_email, #contributor_new input#contributor_password, .adminLogin #student_email, .adminLogin #student_password { font-size: 2em; height: 30px; width: 400px; }
+		#admin_new li.boolean label, #contributor_new li.boolean label, .adminLogin #student_new li.boolean label { float: left; }
+		#admin_new li.boolean input#admin_remember_me, #contributor_new li.boolean input#contributor_remember_me, #student_new li.boolean input#student_remember_me { float: left; }
+		.globalForm ol { overflow: hidden; }
+		.globalForm li { margin-bottom: 20px; }
+		.globalForm li span, .globalForm li div label, .globalForm li span label { color: #444; }
+		.globalForm li { margin: 0 ; padding: 6px 0 9px; }
+		.globalForm p.error { border-bottom: 1px dotted red; color: red; display: inline; font-weight: bold; }
+		.globalForm li.leftHalf, .globalForm div li.rightHalf { width: 47%  } 
+		.globalForm li label, .globalForm div li.rightHalf label {  }
+		.globalForm li.leftHalf { clear: left; float: left; }
+		.globalForm li.rightHalf { clear: none !important; float: right; }
+		.globalForm li label { color: #444; display: block; font-weight: bold; line-height: 150%; margin: 0; padding: 0 0 3px; }
+		.globalForm li div span { display: block; float: left; }
+		.globalForm li textarea { height: 200px; width: 928px; }
+		.globalForm li span.hint { color: #999; }
+		.globalForm inputs li input { float: left;  }
+		.globalForm li.complex { padding-bottom: 0 }
+		.globalForm li.complex div span { padding-bottom: 12px }
+		.globalForm li.complex div span.full { margin: 0 }
+		.globalForm .addNew { display: block; margin-top: 30px; text-align: right; }
+		.globalForm div li span.error { color: #AA1224; font-size: 0.9em; margin: 0; }
+		.globalForm li.guide { color: #999; display: block; font-size: 1em; margin-top: -10px; }
+	    /* @end */
+	    
+	    /* @group -tryout register */
+		.tryoutReg ol { margin: 10px 0; overflow: hidden; }
+		.tryoutReg li { margin-bottom: 10px; }
+		.tryoutReg label.required { display: block; float: none; font-weight: bold; margin: 10px 0; }
+		.tryoutReg label { float: left; margin-right: 10px; width: 200px; }
+		.tryoutReg input { float: left; margin-top: 3px; }
+	    .tryoutReg li.submit { margin-top: 10px; }
+	    /* @end */
+	    
+	   
+	/* @end */
+	
+    /* @group table */
+    table {  margin: 1em auto; width: 100%; }
+    td { color: #555; padding: 0.3em 1em; }
+	table.record { border-right: 1px solid #eee; border-top: 1px solid #eee; margin-top: 10px; }
+	table.record td, table.record th { font-size: 0.9em; }
+	table.record th { background-color: #f7f7f7; border-bottom: 1px solid #eee; border-left: 1px solid #eee; color: #678197; font-weight: normal; padding: 3px 5px; text-align: center; }
+	table.record .column1 { color: #555; font-weight: bold; }
+	table.record thead th {  color: #555; font-weight: bold; text-align: center; }
+	table.record thead tr.column1 { background-color: #eee; }
+	table.record td { background-color: #fff; border-bottom: 1px solid #eee; border-left: 1px solid #eee; color: #678197; padding: 3px 5px; text-align: center; }
+	table.record.subject .column1, table.record.evaluation .column1 { text-align: left; }
+	table.record.all { font-size: 1.4em; }
+	table.record.all td, table.record.all th { text-align: left; }
+	table.record.all th.column1, table.record.all td.column1, table.record.all th.score { text-align: center; }
+	table.record.all td.column1 { font-weight: normal; }
+	table.record.evaluation { font-size: 1.2em; }
+	
+	table.globalTable { margin: 0; }
+	table.globalTable th, table.globalTable td { font-size: 1.2em; padding: 3px; }
+    table.globalTable tbody td, table.globalTable th.column1 { border-bottom: 1px dotted #ccc; }
+	table.globalTable th { color: #555; padding: 3px; text-align: left; }
+	table.globalTable th.subject { border-bottom: 3px solid #66CC99;  text-align: left; }
+	table.globalTable .column1, table.globalTable .score { text-align: center; }
+	table.globalTable th.column1, table.globalTable th.photo, table.globalTable th.name, table.globalTable th.school, table.globalTable th.score { border-bottom: 2px solid #FFE702; }
+	table.globalTable th.right { border-bottom: 3px solid #ddd; }
+	table.globalTable th.wrong { border-bottom: 3px solid #ddd; }
+	table.globalTable th.unanswered { border-bottom: 3px solid #ddd; }
+	table.globalTable th.point { border-bottom: 3px solid #ddd; }
+	table.globalTable th.grade { border-bottom: 3px solid #ddd; }
+	table.globalTable th.option { border-bottom: 3px solid #4EBAFF; }
+	table.globalTable td { padding-bottom: 0; text-align: left; }
+	table.globalTable td.avatar { text-align: center; }
+	table.globalTable tfoot { text-align: center; }
+	
+	table.adminTable th { font-size: 1.2em; }
+    table.adminTable th, table.adminTable td { padding: 5px 12px; }
+    table.adminTable tbody td { border-bottom: 1px dotted #ccc; font-size: 1.2em; }
+	table.adminTable th { border-bottom: 3px solid #ddd; color: #555; }
+	table.adminTable th.option { text-align: center; }
+
+    /* @end */
+
+/* @end */	
+	
+/* @group Facebook fanpage */
+#fbLikeBox { margin-bottom: 10px; }
+#fbLikeBox .fan_box .connections_grid .grid_item { padding-right: 14px !important; }
+/* @end */ 
+
+/* @group Message */
+#messages { margin-top: 10px }
+#messages .message { border: 1px solid black; padding: 5px; min-height: 60px; margin: 10px }
+#messages .avatar { float: left; width: 60px; height: 60px; margin-right: 10px  }
+#messages .set-at { float: right }
+#messages .message.unread .body { font-weight: bold}
+#messages .replay-link { float: right }
+/* @end */
+
+/* @report message */
+#question-report-form { display: none; }
+#question-report-form label { display: block; }
+#question-report-form textarea { width: 370px; }
+#report a.report-btn { background: url('../images-old/report.png') no-repeat; border: none; color: #388FC5; cursor: pointer; }

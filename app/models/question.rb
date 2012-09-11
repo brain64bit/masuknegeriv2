@@ -11,6 +11,7 @@ class Question
 
   #relationship
   has_many :levels
+  belongs_to :subject
   belongs_to :subject_matter
 
   index({code:1},{unique:true})
