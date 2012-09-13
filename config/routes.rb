@@ -1,5 +1,10 @@
 Masuknegeriv2::Application.routes.draw do
 
+  devise_for :students, :path_names => { :sign_in => 'login', :sign_out => 'logout', :sign_up => 'register'},
+    :controllers => {:omniauth_callbacks => "omniauth_callbacks"}
+
+  devise_for :contributors
+
   devise_for :admins
 
   # The priority is based upon order of creation:

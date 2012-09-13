@@ -1,0 +1,10 @@
+.top-banner
+  %h2
+    %span= "Tambah Sering Tambah Pasti"
+    
+- flash.each do |key, message|
+  - vclass = "msg #{key}"
+  %div{class:vclass}
+    = message.html_safe
+    = link_to "#", class:"close-msg" do
+      = image_tag "ico-close.png"

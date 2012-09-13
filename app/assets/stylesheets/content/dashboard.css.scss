@@ -1,0 +1,242 @@
+/* 6.2 Section: Dashboard
+------------------------------------------------------------------------------*/
+#dashboard {}
+
+.top-banner {
+    height: 240px;
+}
+.top-banner h2 {
+    background: image-url("banner-top.jpg") no-repeat 0 0;
+    height: 240px;
+}
+.top-banner span {
+    position: absolute;
+    margin-left: -9999px;
+}
+.msg {
+    border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;
+    border: 2px solid;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 40px;
+    position: relative;
+}
+.msg.success, .msg.notice {
+    border-color: #9ecc82;
+    background: #d9f5c9 image-url("ico-success.gif") no-repeat 10px 10px;
+}
+.msg.error {
+    border-color: #dd8c8c;
+    background: #ffc9c9 image-url("ico-error.gif") no-repeat 10px 10px;
+}
+.msg.warning, .msg.alert {
+    border-color: #d9c587;
+    background: #fff8be image-url("ico-warn.gif") no-repeat 10px 10px;
+}
+.close-msg {
+    padding: 2px;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+
+
+/*- Mod Box-*/
+.mod h4.mod-title {
+    background: #ff6800 image-url("bg-mod-ttl.jpg") no-repeat 100% 0;
+    color: #FFF;
+    padding: 7px 10px;
+    margin: 0;
+    text-shadow: 1px 1px 2px #993300;
+}
+h4.mod-title span {
+    font-size: 11px;
+    font-weight: normal;
+}
+.mod-title .see-more {
+    background: image-url("ico-box-more.png") no-repeat 0 0;
+    height: 26px;
+    width: 22px;
+    float: right;
+}
+.mod-title .see-more:hover {
+    background-position: 0 -26px;
+}
+.mod-box {
+    border: 1px solid #d5d5d5;
+    border-top: none;
+}
+.prof-pic, .usr-info, .edit-bt, .msging, .mod .inner, .salute-me, .salute-me.active {
+    border-top: 1px solid #d5d5d5;
+    padding: 9px;
+}
+.prof-pic {
+}
+.usr-info {
+    background: #eeeeee;
+}
+.usr-info li {
+    margin-bottom: 5px;
+}
+.edit-bt, .msging, .salute-me, .salute-me.active {
+    background: image-url("bg-grad-white.jpg") repeat-x 0 100%;
+}
+.edit-bt span, .msging span, .salute-me span, .salute-me.active span {
+    padding-left: 25px;
+}
+.edit-bt span {
+    background: image-url("ico-edit.png") no-repeat 0 0;
+}
+.msging span {
+    background: image-url("ico-msg.png") no-repeat 0 0;
+}
+.salute-me span {
+    background: image-url("ico-salute-gray.png") no-repeat 1px 0;
+}
+.salute-me span.student-salutes-count,.salute-me.active span.student-salutes-count  {
+    background: none;
+}
+.salute-me.active span {
+    background: image-url("ico-salute-orange.png") no-repeat 1px 0;
+}
+.salute-me.active a {
+    color: #333;
+    font-weight: bold;
+}
+
+/*- Salute box -*/
+.salute li {
+    float: left;
+    font-size: 9px;
+    margin-right: 5px;
+    width: 55px;
+    margin-bottom: 10px;
+}
+.salute li img {
+    display: block;
+    width: 50px;
+}
+
+/*- Score -*/
+.score table {
+    border-top: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    width: 100%
+}
+.score th, .score td {
+    border-bottom: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    font-size: 12px;
+    padding: 4px;
+    text-align: center;
+}
+.score th {font-size: 10px;}
+
+.score .benar td {color: #006600}
+.score .salah td {color:#900;}
+
+.score-chart {
+    border-bottom: 1px dotted #CCC;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/*- Speed -*/
+.speedgraph, .speed-result {
+    float: left;
+}
+.speed-result {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.speed-result span {
+    color: #f60;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*- Upd News -*/
+.post {
+    border-bottom: 1px dotted #CCC;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.post h3 {
+    margin-bottom: 2px;
+}
+.post .dates {
+    display: block;
+    margin-bottom: 10px;
+}
+.post-detail {
+    position: relative;
+}
+
+/*- Badges box -*/
+.badges li {
+    float: left;
+    min-height: 78px;
+}
+.mod.badges li {
+    margin: 0 5px 5px;
+}
+.mod.badges img {
+    width: 90px;
+}
+.left .mod.badges img {
+    width: 80px;
+}
+
+/*- Countdown -*/
+.countdown {}
+.countdown .inner {
+    text-align: center;
+}
+.countdown .counter {
+    margin-bottom: 5px;
+}
+.countdown .counter span {
+    background: image-url("bg-counter.png") no-repeat 0 0;
+    color: #666;
+    display: inline-block;
+    font-size: 60px;
+    height: 67px;
+    line-height: 66px;
+    width: 50px;
+}
+a.take-test {
+    background: image-url("button-lat-soal.png") no-repeat 0 0;
+    display: block;
+    height: 25px;
+    margin: 10px 0 10px 33px; 
+    width: 130px;
+}
+a.take-test:hover {
+    background-position: 0 -25px;
+}
+a.take-test span {
+    position: absolute;
+    margin-left: -9999px;
+}
+
+/*- mod top point -*/
+.top-point {}
+.thumb-left, .desc {
+    float: left;
+}
+.mod .thumb-left {
+    margin-right: 10px;
+    width: 55px;
+}
+.mod .desc {
+    width: 135px;
+}
+.top-point li {
+    margin-bottom: 15px;
+}
+.top-point li img {
+    width: 55px;
+}
+h6.std-name {
+    margin-bottom: 5px;
+}

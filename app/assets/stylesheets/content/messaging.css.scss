@@ -1,0 +1,129 @@
+/* 6.8 Section: Messaging
+------------------------------------------------------------------------------*/
+.post-msg {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.p-msg nav {
+    background:#FFF image-url("bg-grad-white.jpg") repeat-x 0 0;
+    border: 1px solid #dadada;
+    border-bottom-color: #BBB;
+    margin-bottom: 10px;
+    padding: 5px 9px;
+    position: relative;
+}
+.p-msg nav div {
+    display: inline;
+}
+.msg-opt select, .msg-opt input {
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+.p-msg nav .simple-paging {
+    top: 5px;
+    right: 9px;
+}
+.p-msg nav .simple-paging span, .p-msg nav .simple-paging a {
+    float: left;
+    margin-left: 5px;
+}
+.msg-opt input, .msg-opt select, .msg-opt a.new-msg {
+    float: left;
+    margin-right: 5px;
+}
+.p-msg .dates {
+    margin-right: 10px;
+    margin-top: 3px;
+    float: right;
+    text-align: right;
+}
+input.remove {
+    background: none;
+    background: image-url("ico-remove.png") no-repeat 0 0;
+    border: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    color: transparent;
+    font-size: 0;
+    height: 20px;
+    text-indent: 100px;
+    width: 20px;
+}
+input.remove:hover {
+    background: image-url("ico-remove.png") no-repeat 0 0;
+    background-position: -20px 0;
+    border: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.msg-opt a.new-msg {
+    background: image-url("ico-new.png") no-repeat 10px 0;
+    border-left: 1px solid #d0d0d0;
+    display: block;
+    height: 20px;
+    padding-left: 35px;
+    margin-left: 5px;
+}
+.msg-opt a.new-msg:hover {
+    background-position: 10px -20px;
+}
+.post-msg label {
+    min-height: 40px;
+    width: 40px;
+}
+.post-msg .usr-pic {
+    margin-right: 20px;
+}
+.post-msg .usr-story {
+    position: relative;
+    width: 625px;
+}
+.msg-action {
+/*    position: absolute;*/
+    margin-right: 10px;
+    margin-top: 5px;
+    float: right;
+}
+.unread {
+    background: #f8f5e6;
+}
+.set-msg, .del-msg {
+    background: image-url("ico-msg-action.png") no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 8px;
+    margin-left: 10px;
+    padding: 1px;
+    width: 8px;
+}
+.set-msg:hover {
+    background-position-y: -10px;
+}
+.unread .set-msg {
+    background-position-y: -20px;
+}
+.del-msg {
+    background-position: -10px 0;
+}
+.del-msg:hover {background-position: -10px -10px;}
+.del-msg:active {background-position: -10px -20px;}
+
+h3.msg-title {
+    font-weight: normal;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 20px;
+}
+.detail-msg {
+    position: relative;
+}
+.detail-msg .usr-story {
+    width: 665px;
+}
+.detail-msg .simple-paging {
+    background: none;
+    border: none;
+    position: absolute;
+}

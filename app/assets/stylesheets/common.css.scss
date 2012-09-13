@@ -1,0 +1,244 @@
+/*4 Common styles
+------------------------------------------------------------------------------*/
+#main-body {
+    background: image-url("bg-main-body.jpg") repeat-x 0 0;
+    min-height: 210px;
+    min-width: 999px;
+    margin-bottom: 40px;
+}
+.body-inner {
+    background: image-url("bg-main-body-inner.jpg") no-repeat 50% 0;
+    min-height: 210px;
+    min-width: 999px;
+    padding-top: 20px;
+}
+.clearfix:after, hr:after, article li:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+html[xmlns] .clearfix {display: block;}
+* html .clearfix {height: 1%;}
+
+.left, .primary {float: left;}
+.right {float: right;}
+.left {margin-right: 20px;}
+
+.section {
+    margin-bottom: 30px;
+}
+.sec-title {
+    background: image-url("bg-title.png") repeat-x 0 50%;
+    margin-bottom: 10px;
+}
+.sec-title span {
+    background: #FFF;
+    color: #F60;
+    font-size: 24px;
+    padding-right: 5px;
+}
+.sec-title span span {
+    font-weight: normal;
+    color:#666;
+}
+.mod {
+    margin-bottom: 20px;
+}
+
+article img {
+    margin: 0 4px 4px 4px;
+}
+
+/*- Articles -*/
+.dates {
+    color: #666;
+    font-size: 10px;
+}
+article hr {
+    border-style: dotted;
+}
+article ol, article ul {
+    margin-bottom: 15px;
+}
+/*article ol {
+    margin-left: 20px;
+    list-style: decimal;
+}*/
+article li li, article .alpha li, .decimal li {
+    margin-left: 20px;
+}
+article ol.alpha {
+    list-style: lower-alpha;
+}
+article.petunjuk li {
+    border-bottom: 1px dotted #CCC;
+    margin-bottom: 10px;
+}
+article.petunjuk li li {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+article.petunjuk img {
+    box-shadow: 1px 1px 10px #AAA;
+    -moz-box-shadow: 1px 1px 10px #AAA;
+    -webkit-box-shadow: 1px 1px 10px #AAA;
+    float: right;
+    margin: 0 0 10px 20px;
+    padding: 5px;
+}
+article h3, article h4, article h5 {
+    color: #F60;
+}
+article td {
+    border: none;
+}
+article .mata-pelajaran li {
+    float: left;
+    margin-right: 20px;
+    width: 29%;
+}
+article .mata-pelajaran h6 {
+    border-bottom: 1px solid #CCC;
+}
+article .mata-pelajaran ol, .decimal {
+    list-style: decimal;
+}
+article .mata-pelajaran li li {
+    float: none;
+    width: auto
+}
+
+/*- Form -*/
+.label, .desc {
+    float: left;
+}
+
+/*- Column -*/
+aside.left {
+    margin-right: 20px;
+    width: 200px;
+}
+.cols-3 .primary {
+    width: 500px;
+}
+.cols-3 aside.right {
+    width: 220px;
+}
+.cols-2 .primary {
+    width: 740px;
+}
+.cols-2big aside.left {
+    width: 270px;
+}
+.cols-2big .primary {
+    width: 670px;
+}
+.cols-full .primary {
+    float: none;
+    margin: 0;
+    width: 960px;
+}
+
+.more a {
+    background: image-url("more-link.png") no-repeat 100% 50%;
+    padding-right: 12px;
+    float: right;
+}
+
+/*- Pagination -*/
+.pagination {
+    margin: 20px 0;
+}
+.pagination ul {}
+.pagination li {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 1px solid #747474;
+    border-bottom-color: #444444;
+    display: inline;
+    float: left;
+    margin-right: 5px;
+    overflow: hidden;
+}
+.pagination li a {
+    background: #888;
+    border-top: 1px solid #b3b3b3;
+    color: #FFF;
+    display: block;
+    padding: 2px 6px;
+    width: auto;
+}
+.pagination li a:hover {
+    background: #ea660e;
+    border-top-color: #ff9d46;
+}
+.pagination li a span {
+    display: block;
+}
+.pagination .current a, .pagination .current a:hover {
+    background: #444;
+    border-top-color: #111;
+}
+
+/*- Simple Pagination -*/
+.simple-paging {
+    position:  absolute;
+    right: 0;
+    top: 0;
+}
+.simple-paging li {
+    float: left;
+    margin-left: 5px;
+}
+.simple-paging a {
+    background: image-url("bt-prev-nxt.png") no-repeat 0 0;
+    display: block;
+    height: 20px;
+    width: 35px;
+}
+.simple-paging .back {
+    background-position: -70px 0;
+}
+.simple-paging .next {
+    background-position: -35px 0;
+}
+.simple-paging .back:hover {background-position: -70px -20px;}
+.simple-paging .prev:hover {background-position: 0 -20px;}
+.simple-paging .next:hover {background-position: -35px -20px;}
+
+/*- Left Category menu -*/
+.menu li a {
+    background: #FFFFFF image-url("bg-grad-white.jpg") repeat-x 0 100%;
+    display: block;
+    padding: 9px;
+}
+
+/*- pembahasan -*/
+.pembahasan {
+    background: #ededed;
+    border-bottom: 1px solid #c6c6c6;
+    margin-top: 20px;
+    padding: 5px 0
+}
+.pembahasan article {
+    border-top: 1px solid #FFFFFF;
+    padding: 10px;
+}
+h6.bahas-head{
+    border-bottom: 1px solid #c6c6c6;
+    margin: 0;
+    padding-bottom: 5px;
+}
+h6.bahas-head span {
+    display: block;
+    float: left;
+    padding: 6px 10px;
+}
+h6.bahas-head span {
+    border-right: 1px solid #c6c6c6;
+}
+h6.bahas-head span.answer {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #f60;
+    border: 1px solid #996633;
+    color: #FFF;
+}

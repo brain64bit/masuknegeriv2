@@ -1,0 +1,122 @@
+/* 6 Content - Home
+------------------------------------------------------------------------------*/
+#home {}
+#home .primary {width: 660px;}
+#home aside.left {
+    margin-right: 30px;
+    width: 270px;
+}
+#form-reg {
+    width: 270px;
+    margin-left: -20px;
+    padding: 0 20px;
+    background: image-url("bg-form-reg.png") no-repeat 50% 100%;
+    position: relative;
+}
+.form-inner {
+    background: #dfdfdf;
+    border: 5px solid #FFF;
+    padding: 10px;
+}
+#form-reg li {
+    margin-bottom: 10px;
+}
+#form-reg label {display: block;}
+#slider {margin-right: -120px; margin-bottom: 20px; height: 285px;}
+#slider div {
+    position: absolute;
+}
+#form-reg .form-text, #form-reg .form-psw {
+    width: 230px;
+}
+
+/*- Carousel ----*/
+.carousel {
+    margin-left: 20px;
+    width: 630px;
+}
+.carousel li {
+    padding:0 20px;
+    min-height: 180px;
+    max-width: 120px;
+}
+.carousel li img, .carousel li h6, .carousel li p {
+    margin-bottom: 5px;
+}
+.carouse-wrapp {
+    position: relative;
+}
+.carouse-wrapp button {
+    background: none;
+    background: image-url("button-prev-next.jpg") no-repeat 0 0;
+    border: none;
+    height: 27px;
+    position: absolute;
+    top:50px;
+    width: 14px;
+    z-index: 3;
+}
+.carouse-wrapp button.prev:hover {
+    background-position: 0 -27px;
+}
+.carouse-wrapp button.prev:active {
+    background-position: 0 -54px;
+}
+.carouse-wrapp button.next {
+    background-position: -14px 0;
+    right: 0;
+}
+.carouse-wrapp button.next:hover {
+    background-position: -14px -27px;
+}
+.carouse-wrapp button.next:active {
+    background-position: -14px -54px;
+}
+.school-ori {
+    display: block;
+    font-size: 11px;
+}
+span.point {
+    color: #F60;
+}
+
+.split-2 h6 {margin: 0; line-height: 1;}
+.split-2 li {
+    border-bottom: 1px solid #CCC;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    width: 310px;
+    position: relative;
+}
+.split-2 li.even-list {
+    margin-right: 0;
+}
+.latest-article ol.split-2 li {
+    color: #f60;
+    list-style: decimal;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 30px;
+    width: 280px;
+}
+.latest-article h6 {
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+.latest-article li div {
+    display: inline-table;
+    vertical-align: top;
+}
+.latest-article p {
+    display: block;
+    color: #222;
+    font-size: 13px;
+    font-weight: normal;
+}
+.latest-article ol.split-2 li span {
+    color: #222;
+    font-size: 10px;
+    font-weight: normal;
+}

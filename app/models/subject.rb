@@ -5,7 +5,7 @@ class Subject
 
   field :name, type: String
   field :alias_name, type: String
-  has_many :subject_matters
+  has_many :topics
   has_many :questions
 
   private

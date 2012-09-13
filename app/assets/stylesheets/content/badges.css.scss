@@ -1,0 +1,67 @@
+/* 6.10 Section: Badges
+------------------------------------------------------------------------------*/
+.your-badge {}
+.list-badge li {
+    margin: 0 20px 20px 10px;
+    padding: 5px;
+    text-align: center;
+}
+.list-badge li:hover {
+    background: #fffbd0;
+}
+.list-badge li a {
+    display: block;
+    min-height: 90px;
+}
+
+/*- Pop up Detail badges -*/
+.badge-detail-wrapp {display: none;}
+.badge-detail {
+    padding: 10px;
+}
+.badge-detail img, .badge-detail .desc {
+    float: left;
+}
+.badge-detail img {
+    margin-right: 30px;
+    width: 220px;
+}
+.badge-detail .desc {
+    width: 360px;
+}
+.badge-detail h2 {
+    color: #F60
+}
+
+/* Banner Ads -*/
+.banner-ads {
+    margin: 10px auto 40px;
+    text-align: center;
+}
+
+/*- form boxed -*/
+.form-boxed .sec-title span {
+    background: #ffefd1;
+}
+.form-boxed {
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    box-shadow: 1px 1px 15px #CCC;
+    border: 1px solid #CCC;
+    padding: 9px;
+    margin: 0 auto 20px;
+    width: 420px;
+}
+.form-boxed .inner {
+    background: #ffefd1;
+    padding: 10px;
+}
+.form-boxed .label {
+    margin-right: 10px;
+    text-align: right;
+    width: 80px;
+}
+.form-boxed .desc {
+    width: 300px;
+}

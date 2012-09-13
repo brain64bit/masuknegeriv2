@@ -1,0 +1,61 @@
+/* 6.3 Section: Latihan
+------------------------------------------------------------------------------*/
+.mod.rekor .inner {
+    padding: 0;
+}
+.mod.rekor table {
+    width: 100%;
+}
+.mod.rekor th {
+    padding: 5px 4px;
+    text-align: left;
+}
+.mod.rekor td {
+    padding: 3px 4px;
+}
+
+.tab-nav ul {
+    background: #f60 image-url("bg-tab-nav.png") repeat-x 0 100%;
+    height: 39px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+}
+.tab-nav ul li {
+    float: left;
+}
+.tab-nav a {
+    border-width: 0 1px 0 1px;
+    border-left-color: #ff8839;
+    border-right-color: #c95000;
+    border-style: solid;
+    color: #FFF;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 41px;
+    height: 39px;
+    padding: 0 10px;
+}
+.tab-nav a:hover {
+    background-color: #ff8e22;
+}
+.tab-nav .current a {
+    background: #FFF image-url("bg-tab-cur.png") repeat-x 0 0;
+/*    border-color: #c95000;*/
+    color: #666;
+}
+
+table a.take-test {margin: 0;}
+.soal-rekor th {
+    text-align: left;
+}
+.soal-rekor th.option {
+    width: 130px;
+}
+.soal-rekor .usr-pic img {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+
+#question-report-form { display: none; }

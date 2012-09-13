@@ -1,0 +1,144 @@
+/*5 Header
+------------------------------------------------------------------------------*/
+#header {
+    border-top: 7px solid #ff6600;
+    min-height: 85px;
+    min-width: 999px;
+    padding: 10px 0;
+}
+#logo {
+    background: image-url("logo.jpg") no-repeat 0 0;
+    float: left;
+    height: 75px;
+    margin: 24px 0 0;
+    width: 180px;
+}
+#logo a {
+    display: block;
+    height: 75px;
+}
+#logo span {position: absolute; margin-left: -9999px; font-size: 0;}
+.usr-log {text-align: right; margin-bottom: 20px;}
+.usr-log span {
+    margin-right: 10px;
+}
+.usr-log label {
+    margin-right: 5px;
+}
+.fb-login {
+    background: #3b5999 image-url("ico-fb-login.png") no-repeat 0 50%;
+    border: 1px solid #304a81;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    color: #FFF;
+    display: inline-block;
+    line-height: 23px;
+    padding: 0 10px 0 25px;
+}
+.fb-login-box {
+    display: none;
+    background: #FFF;
+    position: absolute;
+    left: 100px;
+    padding: 10px;
+    z-index: 20;
+}
+.header-menu {
+    float: right;
+}
+.header-menu nav {
+    text-align: right;
+    margin-bottom: 10px;
+}
+.header-menu nav li {
+    display: inline;
+    text-align: right;
+    margin: 0;
+}
+.header-menu nav a {
+    color: #666;
+    margin-left: 25px;
+}
+#main-nav a {
+    border-right: 1px solid #ccc;
+    font-size: 17px;
+    padding: 0 10px;
+    margin: 0;
+}
+#main-nav a span {
+    border-bottom: 3px solid #FFF;
+}
+#main-nav a:hover span, #main-nav .current span {
+    color: #F60;
+    border-bottom-color: #F60;
+}
+#main-nav .last-list a {
+    border-right: none;
+    padding-right: 0;
+}
+.big-button {
+    -moz-box-shadow:inset 0px 1px 0px 0px #f9eca0;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #f9eca0;
+    box-shadow:inset 0px 1px 0px 0px #f9eca0;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f0c911), color-stop(1, #f2ab1e) );
+    background:-moz-linear-gradient( center top, #f0c911 5%, #f2ab1e 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0c911', endColorstr='#f2ab1e');
+    background-color:#f0c911;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #f0bc39;
+    display:inline-block;
+    color:#522e27;
+    font-family:arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #ded17c;
+}
+.big-button:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f2ab1e), color-stop(1, #f0c911) );
+    background:-moz-linear-gradient( center top, #f2ab1e 5%, #f0c911 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2ab1e', endColorstr='#f0c911');
+    background-color:#f2ab1e;
+}
+.big-button:active {
+    position:relative;
+    top:1px;
+}
+
+.ybutton {
+    display: inline-block;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc930), color-stop(100%,#ffa403));
+    background: -moz-linear-gradient(center top, #ffc930 0%, #ffa403 100%);
+    -webkit-box-shadow: 1px 1px 2px #e6e6e6, 0.5px 1px #ffd96f inset;
+    -moz-box-shadow: 1px 1px 2px #e6e6e6, 0.5px 1px #ffd96f inset;
+    box-shadow: 1px 1px 2px #e6e6e6, 0.5px 1px #ffd96f inset;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: 1px 1px 0px #b27b0d;
+    padding: 11px 15px;
+    border-color: #e39304;
+    border-width: 1px;
+    border-style: solid;
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.ybutton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd766), color-stop(100%,#ffa403));
+    background: -moz-linear-gradient(center top, #ffd766 0%, #ffa403 100%);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.ybutton:active {
+    -webkit-box-shadow: 1px 1px 1px 1px #ffa403 inset;
+    -moz-box-shadow: 1px 1px 1px 1px #ffa403 inset;
+    box-shadow: 1px 1px 1px 1px #ffa403 inset;
+}

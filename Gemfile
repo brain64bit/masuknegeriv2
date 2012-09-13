@@ -25,7 +25,6 @@ gem 'jquery-rails'
 # utility
 gem "devise"
 gem "omniauth-facebook"
-gem "omniauth"
 gem "cancan"
 # gem "RubyInline"
 
@@ -46,6 +45,8 @@ gem "haml"
 gem "haml-rails"
 gem "bb-ruby", :git => "git://github.com/xinuc/bb-ruby.git", :ref => "99bedf9110a8a89b30d5098ad8f35cafd1417abc"
 gem "googlecharts"
+gem 'meta-tags', :require => 'meta_tags'
+gem 'high_voltage'
 
 # searching
 gem "sunspot_rails"

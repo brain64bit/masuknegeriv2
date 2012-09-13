@@ -1,0 +1,120 @@
+/* 6.5 Section: List Soal
+------------------------------------------------------------------------------*/
+.mod-box-latih {
+    background: image-url("box-latih-top.jpg") no-repeat 0 0;
+    margin-top: 5px;
+    padding-top: 32px;
+}
+.latih-inner {
+    border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    background: image-url("bg-grad-big.jpg") repeat-x 0 0;
+    border: 1px solid #f0f0f0;
+    border-top: none;
+    border-bottom: 1px solid #e6e6e6;
+    padding:5px 0 0;
+}
+.rows {
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #FFF;
+    padding: 9px 19px;
+}
+.rows.timer {
+    border-top: none;
+}
+.timer div {
+    background: image-url("timer-gap.png") no-repeat 100% 21px;
+    float: left;
+    text-align: center;
+    margin: 0 1px;
+    padding-right: 6px;
+}
+.timer .hour {
+    margin-left: 4px;
+}
+.timer .second {
+    background: none;
+    padding: 0;
+}
+.timer span {
+    background: image-url("bg-timer.png") no-repeat 0 0;
+    color: #8e8e8e;
+    color: rgba(0,0,0,0.4);
+    display: block;
+    float: left;
+    font-size: 46px;
+    height: 65px;
+    line-height: 65px;
+    margin: 0 1px;
+    width: 31px;
+}
+.total-point span {
+    color: #f60;
+    font-size: 22px;
+    font-weight: bold;
+}
+.finish a {
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.done-btn {
+    background: image-url("done-button.png") no-repeat 0 0;
+    height: 40px;
+    margin-right: 10px;
+    width: 95px;
+}
+.done-btn:hover {
+    background-position: 0 -40px;
+}
+.done-btn span {
+    position: absolute;
+    margin-left: -9999px;
+}
+.soal {
+    font-size: 16px;
+}
+.soal ol {
+    list-style: upper-alpha;
+}
+.soal ol li {
+    margin-left: 40px;
+}
+.soal .button-group {
+    margin-top: 10px;
+}
+.soal .button-group form, .soal .button-group fieldset {
+    display: inline;
+}
+.soal .button-group li, .soal .button-group strong {
+    float: left;
+}
+.soal .button-group label {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: inset 0 0 4px #BBB;
+    background: #DDD;
+    display: block;
+    padding:4px 8px;
+    margin: 0 5px;
+}
+.soal .button-group label:hover {
+    background: #EEE;
+}
+.soal .button-group input.form-radio {
+    margin-right: 5px;
+}
+.soal .button-group .input[type="submit"], .soal .button-group .form-button, .soal .link-btn {
+    padding: 7px 15px; font-weight: bold;
+}
+.soal .link-btn {
+    background: #666;
+    float: right;
+    text-shadow:1px 1px 3px #000;
+}
+.soal .link-btn:hover {
+    background-color: #444;
+}

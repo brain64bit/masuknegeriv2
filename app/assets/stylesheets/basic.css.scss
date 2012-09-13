@@ -1,0 +1,15 @@
+/*3 Basic styles
+------------------------------------------------------------------------------*/
+.container {margin: 0 auto; width: 960px;}
+
+/*- Breadcrumbs -*/
+.breadcrumbs {
+    color: #666;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+.breadcrumbs a {
+    background: image-url("crumbs.png") no-repeat 100% 50%;
+    padding-right: 12px;
+    margin-right: 5px;
+}

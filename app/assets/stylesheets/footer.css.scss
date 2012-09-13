@@ -1,0 +1,42 @@
+/* 8 Footer
+------------------------------------------------------------------------------*/
+footer {
+    background: image-url("bg-foot-base.jpg") repeat-x 0 100%;
+    color:#FFF;
+}
+#footer-inner {
+    background: image-url("bg-foot-up2.jpg") no-repeat 50% 100%;
+    min-height: 65px;
+    padding-top: 55px;
+}
+.supported span, .supported li, .sos-med a, .sos-med {
+    float: left;
+}
+.supported span {margin-top: 12px; margin-right: 10px;}
+.supported li.odd-list {
+    border-right: 1px solid #FFF;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.sos-med {
+    margin-top: 10px;
+    margin-left: 170px;
+}
+.sos-med a {
+    color: #FFF;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding-right: 25px;
+    margin-right: 15px;
+}
+a.ico-fb {
+    background: image-url("ico-fb.png") no-repeat 100% 50%;
+}
+a.ico-tweet {
+    background: image-url("ico-tweet.png") no-repeat 100% 50%;
+}
+small.copy {
+    margin-top: 12px;
+    float: right;
+}

@@ -1,0 +1,97 @@
+/* 6.4 Section: Profile
+------------------------------------------------------------------------------*/
+.post-wall {
+    border-bottom: 1px dotted #CCC;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.post-wall:hover {
+    background-color: #f1f1f1;
+}
+.post-wall .usr-pic, .post-wall .usr-story,
+.post-msg .usr-pic, .post-msg .usr-story, .post-msg label{
+    float: left;
+}
+.post-wall .usr-pic {
+    display: block;
+    margin: 0 20px 10px 0;
+}
+.post-wall .usr-pic img, .post-msg .usr-pic img {
+    width: 55px;
+}
+.usr-story {width: 665px;}
+.usr-story textarea {
+    border: 1px solid #CCC;
+    background: #e5e5e5;
+    margin-bottom: 10px;
+    width: 650px;
+}
+.usr-story .std-name {float: left;}
+.usr-story .school-ori {
+    float: left;
+    color: #999;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.cols-3 .usr-story {
+    width: 420px;
+}
+.post-author {
+    background: image-url("post-line.png") no-repeat 0 100%;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+}
+.post-stories {
+    margin-bottom: 5px;
+    position: relative;
+}
+.post-action {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+}
+.post-action a {
+    margin-left: 5px;
+    padding-left: 17px;
+}
+.ico-salute {
+    background: image-url("ico-salute.png") no-repeat 0 0;
+}
+.ico-comment {
+    background: image-url("ico-comment.png") no-repeat 0 0;
+}
+.ico-delete {
+    background: image-url("ico-delete.png") no-repeat 0 0;
+}
+.cols-3 .content .label {
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: right;
+    width: 120px;
+}
+.data-form .desc {
+    width: 600px;
+}
+.cols-3 .data-form .desc {
+    width: 370px;
+}
+.data-form li {
+    margin-bottom: 10px;
+}
+.edit-profile form h5 {
+    border-top: 1px solid #DDD;
+    color: #f60;
+    padding-top: 10px;
+}
+
+/*- Tips -*/
+.pin-tips {
+    color: #963;
+    background-color: #fffbd4;
+    border: 1px solid #d5d5d5;
+    padding: 14px;
+}
+.pin-tips p {
+    color: #963;
+    font-size: 14px;
+}
