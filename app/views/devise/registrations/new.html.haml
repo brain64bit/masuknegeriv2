@@ -1,0 +1,13 @@
+%h2 Register
+= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+  = f.input :name, :required => true, :autofocus => true
+  = f.input :email, :required => true
+  = f.input :sex, :as => :select, :collection => {"Laki-laki" => "M", "Perempuan" => "F"}, 
+                        :include_blank => false, :label => "Jenis kelamin"
+  = f.input :birthdate
+  = f.input :school_name                        
+  = f.input :password, :required => true
+  = f.input :password_confirmation, :required => true
+  = f.button :submit, "Register"
+
+= render "devise/shared/links"
