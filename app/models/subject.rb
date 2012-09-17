@@ -5,7 +5,9 @@ class Subject
 
   field :name, type: String
   field :alias_name, type: String
-  has_many :topics
+  
+  has_many :children, :class_name => "Subject", :inverse_of => :parent
+  belongs_to :parent, :class_name => "Subject", :inverse_of => :children, :index => true
   has_many :questions
 
   private

@@ -10,9 +10,7 @@ class Question
   field :discussion_body
 
   #relationship
-  has_many :levels
-  belongs_to :subject
-  belongs_to :topic
+  belongs_to :subject, :index => true
 
   index({code:1},{unique:true})
 
