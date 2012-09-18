@@ -7,4 +7,7 @@ class Post
   field :type, type: String
   field :published, type: Boolean
   field :commentable, type: Boolean
+
+  TYPE = %w{ news announcement }
 end
+#1160005616389

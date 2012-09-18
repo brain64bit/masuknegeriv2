@@ -9,6 +9,7 @@ class Subject
   has_many :children, :class_name => "Subject", :inverse_of => :parent
   belongs_to :parent, :class_name => "Subject", :inverse_of => :children, :index => true
   has_many :questions
+  has_many :subject_records
 
   private
   def generate_slug

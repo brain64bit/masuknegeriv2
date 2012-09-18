@@ -1,5 +1,7 @@
 class Student
   include Mongoid::Document
+  include Mongoid::Timestamps
+  include Mongoid::Slugify
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -56,6 +58,7 @@ class Student
   # field :authentication_token, :type => String
 
   # relation
+  has_many :subject_records
   belongs_to :school
   belongs_to :program
 
@@ -66,5 +69,10 @@ class Student
         student.email = auth.email
       end
     end
+  end
+
+  private
+  def generate_slug
+    self.name.parameterize
   end
 end
