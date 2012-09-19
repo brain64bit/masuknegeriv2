@@ -58,6 +58,7 @@ class Student
   # field :authentication_token, :type => String
 
   # relation
+  has_many :student_activities
   has_many :subject_records
   belongs_to :school
   belongs_to :program

@@ -9,8 +9,8 @@ class Answer
   field :working_time => Float
 
   # relation
-  belongs_to :student
-  belongs_to :question
+  belongs_to :student, :index => true
+  belongs_to :question, :index => true
 
   def set_working_time
   	self.working_time = start_time - finish_time

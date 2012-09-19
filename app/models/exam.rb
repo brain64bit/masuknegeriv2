@@ -7,6 +7,7 @@ class Exam
   field :start_time, type: DateTime
   field :finish_time, type: DateTime
   field :description, type: String
+  field :simultaneously, type:Boolean #akbar
 
   has_many :questions
   belongs_to :program
