@@ -41,6 +41,7 @@ class Student
 
   validates_presence_of :name
   validates_presence_of :school_name
+  validates_format_of :school_name, :with => /\A(SMA|SMAN|SMK|SMKN)\s(\w)+$/, :message => "Harus diawali SMA|SMAN|SMK|SMKN"
 
 
   ## Confirmable
@@ -68,6 +69,17 @@ class Student
       find_or_create_by(auth.slice) do |student|
         student.name = auth.name
         student.email = auth.email
+      end
+    end
+
+    def new_with_session(params, session)
+      if session["devise.student_attributes"]
+        new(session["devise.student_attributes"], without_protection:true) do |student|
+          student.attributes = params
+          student.valid?
+        end
+      else
+        super
       end
     end
   end

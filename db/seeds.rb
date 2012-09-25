@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+{
+	"IPA" => "Ilmu Pengetahuan Alam",
+	"IPS" => "Ilmu Pengetahuan Sosial",
+	"IPC" => "Ilmu Pengetahuan Campuran"
+}.each do |k,v|
+	Program.create(name:k, description:v)
+end

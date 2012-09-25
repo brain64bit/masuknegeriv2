@@ -13,12 +13,12 @@ class Exam
   belongs_to :program
 
   TYPE = {
-  	"smptn":{correct:4, wrong:-1, unanswered:0},
-  	"un":{correct:1, wrong:-1, unanswered:0}
+  	"smptn" => {correct:4, wrong:-1, unanswered:0},
+  	"un" => {correct:1, wrong:-1, unanswered:0}
   }
 
-  validation_presence_of :type, :program_id, :start_time, :finish_time
-  validation_inclusion_of :type, :in => Exam::TYPE.keys
+  validates_presence_of :type, :program_id, :start_time, :finish_time
+  validates_inclusion_of :type, :in => Exam::TYPE.keys
 
   def un?
   	self.type.eql?("un")

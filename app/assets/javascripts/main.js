@@ -60,4 +60,6 @@ $(document).ready(function(){
     $("select#type").change(function() {
       $("#discussionsFilter").submit();
     });
+
+    $(".datepicker").datepicker();
 });

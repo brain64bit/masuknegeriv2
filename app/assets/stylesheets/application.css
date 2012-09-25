@@ -12,4 +12,5 @@
  *= require lib/jquery.autocomplete
  *= require lib/ui-lightness/jquery-ui-1.8.19.custom.css
  *= require lib/token-input-facebook.css
+ *= require jquery.ui.all
 */

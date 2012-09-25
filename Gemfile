@@ -21,11 +21,13 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 
 # utility
 gem "devise"
 gem "omniauth-facebook"
 gem "cancan"
+gem 'spreadsheet'
 # gem "RubyInline"
 
 #ODM

@@ -1,4 +1,6 @@
+//= require jquery
 //= require jquery_ujs
+//= require jquery.ui.all
 //= require lib//jcarousellite
 //= require lib/jquery.easing.1.3
 //= require lib/jquery.fancybox-1.3.4.pack
