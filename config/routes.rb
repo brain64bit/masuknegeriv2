@@ -1,5 +1,13 @@
 Masuknegeriv2::Application.routes.draw do
 
+  get "exams/index"
+
+  get "exams/edit"
+
+  get "exams/new"
+
+  get "exams/show"
+
   devise_for :students, :path_names => { :sign_in => 'login', :sign_out => 'logout', :sign_up => 'register'},
     :controllers => {:omniauth_callbacks => "omniauth_callbacks"}
 
