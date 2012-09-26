@@ -1,0 +1,31 @@
+#latihan.container
+  .cols2.clearfix
+    %aside.left
+      = render_cell :students, :record, :program => current_student.program.name
+    .primary
+      %nav.tab-nav
+        %ul.clearfix
+          %li.current= link_to "Soal Terjawab", "#"
+          %li= link_to "Penjelasan", "#"
+          %li= link_to "Petunjuk", "#"
+          %li= link_to "Sistem Penilaian", "#"
+      .content
+        %table.soal-rekor
+          %thead
+            %tr
+              %th{colspan:2} Mata Pelajaran
+              %th Jumlah Soal Terjawab
+              %th.option Pilihan
+          %tbody
+            - @subjects.each do |subject|
+              %tr
+                %th{colspan:2}
+                  %strong= subject.name
+                %th=0
+                %th= link_to "", "#", class: 'take-test'
+              - subject.children.each_with_index do |ch,i|
+                %tr
+                  %td= i+1
+                  %td= ch.name
+                  %td=0
+                  %td= link_to "", "#", class: 'take-test'

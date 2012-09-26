@@ -12,3 +12,5 @@
 }.each do |k,v|
 	Program.create(name:k, description:v)
 end
+
+Admin.create(email:"admin@masuknegeri.com", password:"secret")

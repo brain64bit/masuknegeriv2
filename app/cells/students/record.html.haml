@@ -1,0 +1,14 @@
+%div{class:"mod rekor"}
+  %h4.mod-title Rekor Kamu
+  .mod-box
+    .inner
+      %table
+        %thead
+          %tr
+            %th Mata Pelajaran
+            %th Poin
+        %tbody
+          - @subjects.each do |subject|
+            %tr
+              %td= subject.name
+              %td= 0

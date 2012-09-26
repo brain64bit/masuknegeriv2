@@ -4,7 +4,7 @@ class Contributor
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :rememberable#:registerable, :recoverable, :rememberable, :trackable, :validatable
-
+  field :name
   ## Database authenticatable
   field :email,              :type => String, :default => ""
   field :encrypted_password, :type => String, :default => ""
@@ -25,6 +25,8 @@ class Contributor
   field :last_sign_in_at,    :type => Time
   field :current_sign_in_ip, :type => String
   field :last_sign_in_ip,    :type => String
+
+  has_many :questions
 
   ## Confirmable
   # field :confirmation_token,   :type => String

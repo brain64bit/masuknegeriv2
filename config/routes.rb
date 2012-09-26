@@ -7,6 +7,10 @@ Masuknegeriv2::Application.routes.draw do
 
   devise_for :admins
 
+  resources :subjects
+  resources :contributors
+  resources :questions
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

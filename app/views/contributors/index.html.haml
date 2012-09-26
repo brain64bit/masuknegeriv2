@@ -1,0 +1,29 @@
+#primary.grid_16
+  %h2
+    Contributors list
+  %nav.adminSubMenu
+    =link_to "Tambah contributor", new_contributor_path
+  = page_entries_info @contributors
+  %table.adminTable
+    %tr
+      %th
+        Nama
+      %th
+        Email
+      %th
+        Jumlah Soal
+      %th.option{:colspan => "2"}
+        Pilihan
+    - @contributors.each do |contributor|
+      %tr
+        %td
+          = link_to contributor.name, contributor_path(contributor)
+        %td
+          = contributor.email
+        %td
+          = contributor.questions.count
+        %td
+          = link_to "Edit", edit_contributor_path(contributor)
+        %td
+          = link_to "Delete", contributor_path(contributor), :method => :delete, :confirm => "Hapus?"
+  = paginate @contributors

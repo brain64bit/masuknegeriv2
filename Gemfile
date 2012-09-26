@@ -33,6 +33,7 @@ gem 'spreadsheet'
 #ODM
 gem 'mongoid', '~> 3.0.0'
 gem 'mongoid-slugify'
+gem 'mongoid_auto_increment'
 
 # File and Image upload
 gem "rmagick"
@@ -49,6 +50,8 @@ gem "bb-ruby", :git => "git://github.com/xinuc/bb-ruby.git", :ref => "99bedf9110
 gem "googlecharts"
 gem 'meta-tags', :require => 'meta_tags'
 gem 'high_voltage'
+gem 'cells'
+gem 'breadcrumbs_on_rails'
 
 # searching
 gem "sunspot_rails"

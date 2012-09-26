@@ -10,6 +10,7 @@ class Question
   field :discussion_body
   field :level, :type => Integer
   field :valuation, :type => Hash, :default => {correct:4, wrong:-1, unanswered:0}
+  field :publish, :type => Boolean, :default => false
 
   #relationship
   has_many :answers
