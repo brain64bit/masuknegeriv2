@@ -19,10 +19,13 @@ class Subject
   scope :parents, where(parent_id:nil).asc(:created_at)
 
   class << self
-    def program(name)
-      program_id = Program.send(name).id
-      ipc_id = Program.ipc.id
-      where(:program_id.in => [program_id, ipc_id])
+    def program(name="ipc")
+      program_ids = if name.eql?("ipc")
+        [Program.ipa.id, Program.ips.id, Program.ipc.id]
+      elsif ["ipa","ips"].include?(name)
+        [Program.ipc.id, Program.send(name).id]
+      end
+      where(:program_id.in => program_ids)
     end
   end
   

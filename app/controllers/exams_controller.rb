@@ -6,6 +6,7 @@ class ExamsController < ApplicationController
   end
 
   def new
+  	@exam = Exam.new
   end
 
   def show

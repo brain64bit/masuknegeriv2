@@ -51,4 +51,18 @@ class Question
   def validate?(other_answer)
     self.answer_key.downcase.eql?(other_answer)
   end
+
+  class << self
+    def ipa_programs
+      Question.where(:subject_id.in => Subject.program("ipa").map(&:id))
+    end
+
+    def ips_programs
+      Question.where(:subject_id.in => Subject.program("ips").map(&:id))
+    end
+
+    def ipc_programs
+      Question.where(:subject_id.in => Subject.program("ipc").map(&:id))
+    end
+  end
 end

@@ -1,13 +1,5 @@
 Masuknegeriv2::Application.routes.draw do
 
-  get "exams/index"
-
-  get "exams/edit"
-
-  get "exams/new"
-
-  get "exams/show"
-
   devise_for :students, :path_names => { :sign_in => 'login', :sign_out => 'logout', :sign_up => 'register'},
     :controllers => {:omniauth_callbacks => "omniauth_callbacks"}
 
@@ -18,6 +10,7 @@ Masuknegeriv2::Application.routes.draw do
   resources :subjects
   resources :contributors
   resources :questions
+  resources :exams
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -13,4 +13,8 @@
 	Program.create(name:k, description:v)
 end
 
+Exam::Type.keys.each do |exam|
+	
+end
+
 Admin.create(email:"admin@masuknegeri.com", password:"secret")
